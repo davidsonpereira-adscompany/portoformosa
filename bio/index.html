@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Complexo Porto Formosa — BR-135</title>
+<meta name="description" content="Posto, restaurante, hotel e casa de peças no mesmo lugar, na BR-135 em Formosa do Rio Preto-BA. Fale direto no WhatsApp com cada unidade.">
+<meta name="theme-color" content="#0C1894">
+<meta property="og:title" content="Complexo Porto Formosa — sua parada completa na BR-135">
+<meta property="og:description" content="Abastece, almoça, descansa e resolve as peças da fazenda no mesmo lugar. Fale com cada unidade no WhatsApp.">
+<meta property="og:image" content="img/capa.jpg">
+<link rel="icon" href="img/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0C1894; --azul-escuro:#061060; --vermelho:#FF1019; --branco:#FFFFFF;
+    --texto:#F4F6FF; --texto-2:rgba(244,246,255,.72); --vidro:rgba(255,255,255,.07); --borda:rgba(255,255,255,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    min-height:100dvh; font-family:"Poppins",-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--texto);
+    background:#061060 radial-gradient(120% 80% at 50% 0%, #1326b8 0%, var(--azul) 38%, var(--azul-escuro) 100%) fixed;
+    -webkit-font-smoothing:antialiased; display:flex; justify-content:center;
+    padding:calc(env(safe-area-inset-top) + 28px) 18px calc(env(safe-area-inset-bottom) + 28px);
+  }
+  .tela{width:100%;max-width:440px}
+
+  /* topo */
+  .topo{text-align:center}
+  .avatar{width:104px;height:104px;border-radius:50%;margin:0 auto;padding:4px;background:linear-gradient(135deg,var(--vermelho),rgba(255,255,255,.55));box-shadow:0 14px 34px rgba(0,0,0,.35)}
+  .avatar img{width:100%;height:100%;border-radius:50%;display:block;background:#0C1894}
+  h1{font-size:24px;font-weight:700;letter-spacing:-.2px;margin-top:16px;line-height:1.2}
+  .sub{font-size:14.5px;color:var(--texto-2);margin-top:6px;line-height:1.45}
+  .pill{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:7px 13px;border-radius:999px;background:var(--vidro);border:1px solid var(--borda);font-size:12.5px;font-weight:500}
+  .pill svg{width:14px;height:14px;fill:var(--vermelho)}
+
+  /* lista */
+  .rotulo{margin:30px 0 12px;font-size:12px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--texto-2);text-align:center}
+  .lista{display:grid;gap:12px}
+  .btn{
+    display:flex;align-items:center;gap:14px;padding:12px 14px 12px 12px;border-radius:20px;text-decoration:none;color:inherit;
+    background:var(--vidro);border:1px solid var(--borda);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,.22); transition:transform .15s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(.985);background:rgba(255,255,255,.11)}
+  .ico{width:60px;height:60px;border-radius:50%;flex:0 0 60px;overflow:hidden;border:2px solid rgba(255,255,255,.18);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
+  .ico img{width:100%;height:100%;display:block;object-fit:cover;transform:scale(1.06)}
+  .txt{flex:1;min-width:0}
+  .txt b{display:block;font-size:16.5px;font-weight:600;line-height:1.2}
+  .txt span{display:block;font-size:12.5px;color:var(--texto-2);margin-top:3px;line-height:1.35}
+  .zap{width:44px;height:44px;border-radius:50%;flex:0 0 44px;display:grid;place-items:center;background:var(--vermelho);box-shadow:0 8px 20px rgba(255,16,25,.35)}
+  .zap svg{width:22px;height:22px;fill:#fff}
+
+  /* secundários */
+  .sec{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+  .sec a{display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 12px;border-radius:16px;background:transparent;border:1px solid var(--borda);color:var(--texto);text-decoration:none;font-size:14px;font-weight:500}
+  .sec svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+  footer{margin-top:34px;text-align:center;color:var(--texto-2);font-size:12px;line-height:1.6}
+  footer b{color:var(--texto);font-weight:600}
+  .marca{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:10px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;opacity:.7}
+  .marca i{display:inline-block;width:22px;height:1px;background:currentColor}
+
+  @media (min-width:700px){
+    body{align-items:center}
+    .tela{padding:34px 30px;border-radius:32px;background:rgba(0,0,0,.18);border:1px solid var(--borda);box-shadow:0 40px 100px rgba(0,0,0,.45)}
+  }
+</style>
+</head>
+<body>
+<main class="tela">
+  <header class="topo">
+    <div class="avatar"><img src="img/avatar.png" alt="Porto Formosa"></div>
+    <h1>Complexo Porto Formosa</h1>
+    <p class="sub">Sua parada completa na BR-135: abastece, almoça, descansa e resolve as peças da fazenda no mesmo lugar.</p>
+    <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>BR-135 · Formosa do Rio Preto-BA</span>
+  </header>
+
+  <p class="rotulo">Fale direto com quem você precisa</p>
+
+  <nav class="lista" id="lista">
+    <a class="btn" data-num="5577998287973" data-msg="Olá! Vim pelo Instagram do Posto Formosa e quero falar sobre abastecimento.">
+      <span class="ico"><img src="img/ico-posto.jpg" alt=""></span>
+      <span class="txt"><b>Posto</b><span>Combustível de qualidade, abastecimento rápido</span></span>
+      <span class="zap"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4A9.8 9.8 0 0 1 2.1 12C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.5 9.7-9.9 9.7zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg></span>
+    </a>
+
+    <a class="btn" data-num="PREENCHER" data-msg="Olá! Vim pelo Instagram do Posto Formosa e quero falar com o restaurante.">
+      <span class="ico"><img src="img/ico-restaurante.jpg" alt=""></span>
+      <span class="txt"><b>Restaurante</b><span>Comida feita na hora pra quem vem de viagem</span></span>
+      <span class="zap"><svg viewBox="0 0 24 24"><use href="#zap"/></svg></span>
+    </a>
+
+    <a class="btn" data-num="5577998287973" data-msg="Olá! Vim pelo Instagram do Posto Formosa e quero informações sobre hospedagem no Hotel Formosa.">
+      <span class="ico"><img src="img/ico-hotel.jpg" alt=""></span>
+      <span class="txt"><b>Hotel Formosa</b><span>Reservas e informações de hospedagem</span></span>
+      <span class="zap"><svg viewBox="0 0 24 24"><use href="#zap"/></svg></span>
+    </a>
+
+    <a class="btn" data-num="PREENCHER" data-msg="Olá! Vim pelo Instagram do Posto Formosa e quero falar com a Porto Peças.">
+      <span class="ico"><img src="img/ico-pecas.jpg" alt=""></span>
+      <span class="txt"><b>Porto Peças</b><span>Representante autorizada Stihl · peças, ferramentas e óleos</span></span>
+      <span class="zap"><svg viewBox="0 0 24 24"><use href="#zap"/></svg></span>
+    </a>
+  </nav>
+
+  <div class="sec">
+    <a href="https://www.google.com/maps/search/?api=1&query=Posto+Formosa+BR-135+Formosa+do+Rio+Preto+BA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-7.4-7-12a7 7 0 0 1 14 0c0 4.6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Como chegar
+    </a>
+    <a href="https://www.instagram.com/postoformosafrp/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>Instagram
+    </a>
+  </div>
+
+  <footer>
+    <b>Complexo Porto Formosa</b><br>Rodovia BR-135, s/n · Formosa do Rio Preto-BA
+    <div class="marca"><i></i>Grupo Porto<i></i></div>
+  </footer>
+</main>
+
+<svg width="0" height="0" style="position:absolute"><defs><path id="zap" d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4A9.8 9.8 0 0 1 2.1 12C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.5 9.7-9.9 9.7zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></defs></svg>
+
+<script>
+  document.querySelectorAll('#lista .btn').forEach(function(a){
+    var n = a.dataset.num, m = encodeURIComponent(a.dataset.msg || '');
+    a.href = 'https://wa.me/' + n + '?text=' + m;
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+</script>
+</body>
+</html>
